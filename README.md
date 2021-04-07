@@ -1,8 +1,6 @@
 # Google Classroom notifier Discord bot
 
-A tiny Discord bot that will send you a notification to a designated Discord
-channel every time there's a new announcement in one of the Google Classroom
-courses you're in.
+A simple Discord bot that sends message to your discord channel and notifies you whenever there's an update in any of the Google Classroom you're in.
 
 ## Requirements
 
@@ -23,13 +21,14 @@ scope:
 
 ```
 https://www.googleapis.com/auth/classroom.coursework.me.readonly
+
 ```
 
-If you want the attached Google Drive files to be uploaded to the channel (as
-long as they're less than 8 MB in size), you also need this scope:
+If you want the bot to attach the files that comes with the announcement then you have to grant this scope as well.
 
 ```
 https://www.googleapis.com/auth/drive.readonly
+
 ```
 
 ## Getting Started
@@ -37,14 +36,16 @@ https://www.googleapis.com/auth/drive.readonly
 ### 1. Clone the repo
 
 ```
-git clone git@github.com:jozsefsallai/discord-google-classroom.git
-cd discord-google-classroom
+git clone https://github.com/Bla-nk/Discord_GoogleClassroom.git
+cd Discord_GoogleClassroom
+
 ```
 
 ### 2. Install the dependencies
 
 ```
 npm install
+
 ```
 
 ### 3. Create and modify the config file
@@ -52,13 +53,15 @@ npm install
 ```
 cp config.example.json config.json
 vim config.json
-```
 
+```
+Here you will need to add all the necessary details such as bot token, classroom IDs/links, Google API OAuth2 credentials etc. Everything is explained at the end of this README  
 ### 4. Build the app and start it to authorize your app
 
 ```
 npm run build
 npm run start
+
 ```
 
 On the first run, you will be prompted to open a URL to authorize your
@@ -79,12 +82,11 @@ step and the Express server will not start either.
 Open the following link in your browser:
 
 ```
-https://discord.com/oauth2/authorize?client_id=CLIENT_ID&scope=bot
+https://discord.com/oauth2/authorize?client_id=APP_ID&scope=bot
+
 ```
 
-where you replace "CLIENT_ID" with the app ID of your bot (not the user ID).
-The bot doesn't require any permission other than read and write to the channel
-it's supposed to send the notifications to.
+Here the "APP_ID" is to be replaced by the App ID of your bot.
 
 ## Configuration
 
@@ -158,14 +160,3 @@ link ID of https://classroom.google.com/u/0/c/MTA7AfC10BO0AVEt is
 `MTA7AfC10BO0AVEt`. This is useful if you have access to the classroom but you
 don't know what the enrollment code is. The parameter is optional if you've
 specified `enrollmentCodes` instead.
-
-## Contribution
-
-Contribution is encouraged! This was an afternoon project, so I don't expect it
-to be completely bug-proof and there are definitely things that I could have
-done better. Before creating a PR, make sure that your changes pass the linter
-by running the following command:
-
-```
-npm run lint
-```
