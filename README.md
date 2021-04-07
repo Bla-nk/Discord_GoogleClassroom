@@ -9,7 +9,7 @@ courses you're in.
 - Node.js v12 or later
 - A G Suite for Education account with Google Classroom enabled
 - A Discord bot token
-- [(A channel ID for the notifications to be sent to)](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-)
+- [A channel ID for the notifications to be sent to](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-)
 - A domain name or ngrok for the initial setup (for the callback URI)
 - OAuth2 credentials for Google's API with the following scopes:
 
