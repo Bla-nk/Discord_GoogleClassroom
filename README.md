@@ -8,7 +8,7 @@ courses you're in.
 
 - Node.js v12 or later
 - A G Suite for Education account with Google Classroom enabled
-- [A Discord bot token](https://www.writebots.com/discord-bot-token/#:~:text=Discord%20Bot%20Token%3F-,A%20Discord%20Bot%20Token%20is%20a%20short%20phrase%20(represented%20as,in%20turn%20controls%20bot%20actions.)
+- [(A Discord bot token)](https://www.writebots.com/discord-bot-token/#:~:text=Discord%20Bot%20Token%3F-,A%20Discord%20Bot%20Token%20is%20a%20short%20phrase%20(represented%20as,in%20turn%20controls%20bot%20actions.)
 - [(A channel ID for the notifications to be sent to)](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-)
 - A domain name or ngrok for the initial setup (for the callback URI)
 - OAuth2 credentials for Google's API with the following scopes:
